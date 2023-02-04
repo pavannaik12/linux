@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ("Git checkout"){
             steps{
-                
+                git credentialsId: 'fbb8eea4-a64b-477f-a472-9da7904e72d5', url: 'https://github.com/pavannaik12/linux.git'
             }
         }
     }
